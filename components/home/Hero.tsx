@@ -84,7 +84,7 @@ export default function Hero() {
             </span>
             <br />
             <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-emerald-400 bg-clip-text text-transparent">
-              Frontend Engineer
+             Senior Frontend Engineer
             </span>
           </motion.h1>
 

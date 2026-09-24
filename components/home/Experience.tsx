@@ -5,7 +5,7 @@ import { BriefcaseBusiness, CheckCircle2, MapPin } from "lucide-react";
 
 const experiences = [
   {
-    role: "Front-End Engineer",
+    role: "Senior Front-End Engineer",
     company: "V4Technology",
     date: "Apr 2025 - Present",
     location: "Saudi Arabia · Remote",
