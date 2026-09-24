@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { Menu, X, ArrowUpRight } from "lucide-react";
+import { Menu, X, ArrowUpRight, Download, FileText } from "lucide-react";
 
 const navItems = [
   { name: "About", href: "#about" },
@@ -88,15 +88,36 @@ export default function Header() {
               </Link>
             ))}
           </nav>
+          <nav className="flex items-center gap-2">
+            <div className="flex items-center gap-2">
+              <a
+                href="/MohamedElsayedSeniorFrontEndEngineerReactjsNextjs.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group hidden h-10 items-center justify-center gap-2 rounded-full bg-gradient-to-r from-blue-500 to-cyan-400 px-5 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-blue-500/30 md:inline-flex"
+              >
+                View CV
+                <FileText className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5" />
+              </a>
 
-          <Link
-            href="#contact"
-            className="group hidden h-10 items-center justify-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-5 text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-400/30 hover:bg-blue-500/10 md:inline-flex"
-          >
-            Contact
-            <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
-          </Link>
-
+              <a
+                href="/MohamedElsayedSeniorFrontEndEngineerReactjsNextjs.pdf"
+                download="Mohamed-Elsayed-Farid-CV.pdf"
+                aria-label="Download CV"
+                title="Download CV"
+                className="group hidden h-10 w-10 items-center justify-center rounded-full border border-white/10 bg-white/[0.04] text-muted-foreground transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-400/30 hover:bg-blue-500/10 hover:text-blue-400 md:inline-flex"
+              >
+                <Download className="h-4 w-4 transition-transform duration-300 group-hover:translate-y-0.5" />
+              </a>
+            </div>
+            <Link
+              href="#contact"
+              className="group hidden h-10 items-center justify-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-5 text-sm font-medium transition-all duration-300 hover:-translate-y-0.5 hover:border-blue-400/30 hover:bg-blue-500/10 md:inline-flex"
+            >
+              Contact
+              <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+            </Link>
+          </nav>
           <button
             type="button"
             aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
