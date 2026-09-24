@@ -172,6 +172,42 @@ export default function Header() {
                 <ArrowUpRight className="h-5 w-5 text-muted-foreground transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-blue-400" />
               </Link>
             ))}
+            <div className="mt-2 flex flex-col">
+              <a
+                href="/MohamedElsayedSeniorFrontEndEngineerReactjsNextjs.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleNavClick}
+                className="group flex items-center justify-between border-b border-white/10 py-5"
+              >
+                <div className="flex items-center gap-4">
+                  <span className="text-xs text-muted-foreground">05</span>
+
+                  <span className="text-2xl font-semibold transition-colors duration-300 group-hover:text-blue-400">
+                    View CV
+                  </span>
+                </div>
+
+                <FileText className="h-5 w-5 text-muted-foreground transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-blue-400" />
+              </a>
+
+              <a
+                href="/MohamedElsayedSeniorFrontEndEngineerReactjsNextjs.pdf"
+                download="Mohamed-Elsayed-Farid-CV.pdf"
+                onClick={handleNavClick}
+                className="group flex items-center justify-between border-b border-white/10 py-5"
+              >
+                <div className="flex items-center gap-4">
+                  <span className="text-xs text-muted-foreground">06</span>
+
+                  <span className="text-2xl font-semibold transition-colors duration-300 group-hover:text-blue-400">
+                    Download CV
+                  </span>
+                </div>
+
+                <Download className="h-5 w-5 text-muted-foreground transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1 group-hover:text-blue-400" />
+              </a>
+            </div>
           </nav>
 
           <Link
